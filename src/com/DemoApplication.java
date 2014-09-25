@@ -21,7 +21,8 @@ public class DemoApplication {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
-        JTextField textField = new JTextField(10);
+        JTextField textField = new JTextField("1 3 4 6 2 7 8 13 52 64 89 43", 10);
+        JLabel label = new JLabel("RED - new element, YELLOW - rotating subtree, GREEN - old elements. Enter tree nodes and separate them by space.");
         textField.setSize(100, 30);
         JButton add = new JButton("Draw");
         add.addActionListener(new ButtonActionListener(tree, textField));
@@ -31,6 +32,9 @@ public class DemoApplication {
         c.fill = GridBagConstraints.HORIZONTAL;
         c.gridx = 0;
         c.gridy = 0;
+        frame.add(label, c);
+
+        c.gridy = 1;
         frame.add(textField, c);
 
         c.gridx = 1;
@@ -39,7 +43,7 @@ public class DemoApplication {
         c.weightx = 0;
         c.weighty = 0;
         c.gridx = 0;
-        c.gridy = 1;
+        c.gridy = 2;
         c.gridwidth = 2;
         c.ipady = 500;
         frame.add(panel, c);

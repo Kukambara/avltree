@@ -331,26 +331,4 @@ class AvlTree<T extends Comparable<? super T>> {
 
         return true;
     }
-
-    /**
-     * Main entry point; contains test code for the tree.
-     *
-     public static void main () { //String []args){
-     AvlTree<Integer> t = new AvlTree<Integer>();
-
-     t.insert (new Integer(2));
-     t.insert (new Integer(1));
-     t.insert (new Integer(4));
-     t.insert (new Integer(5));
-     t.insert (new Integer(9));
-     t.insert (new Integer(3));
-     t.insert (new Integer(6));
-     t.insert (new Integer(7));
-
-     System.out.println ("Infix Traversal:");
-     System.out.println(t.serializeInfix());
-
-     System.out.println ("Prefix Traversal:");
-     System.out.println(t.serializePrefix());
-     }*/
 }

@@ -20,68 +20,6 @@ public class Drawer {
 
     }
 
-   /* public void draw() {
-        int width = panel.getWidth();
-        int height = panel.getHeight();
-        if (tree.root == null)
-            return;
-        panel.getGraphics().clearRect(0, 0, width, height);
-        drawTree(tree.root, (int) Math.pow(2, tree.height(tree.root) + 1) * elementWidth / 2, 0, true);
-        try {
-            Thread.sleep(1000);
-            System.out.println("sleep");
-            rotating = null;
-        } catch (InterruptedException ex) {
-            System.out.println("Interrupted exception");
-        }
-    }
-
-    public void drawTree(AvlTree.AvlNode node, int centerX, int centerY, boolean isRoot) {
-        Graphics g = panel.getGraphics();
-        g.setColor(Color.GREEN);
-        if (rotating != null && node.element.equals(rotating.element)) {
-            g.setColor(Color.YELLOW);
-        }
-        if (tree.contains((Integer) node.element, rotating)) {
-            g.setColor(Color.YELLOW);
-        }
-        if (newElement != null && node.element.equals(newElement.element)) {
-            g.setColor(Color.RED);
-        }
-        if (algorithmElement != null && node.element.equals(algorithmElement.element)) {
-            g.setColor(Color.BLUE);
-        }
-        g.fillOval(centerX, centerY, elementWidth, elementHeight);
-        g.setColor(Color.BLACK);
-        g.drawString(node.element.toString(),
-                centerX + (elementWidth / 2) - (g.getFontMetrics().stringWidth(node.element.toString()) / 2),
-                centerY + (elementHeight / 2));
-        g.setColor(Color.BLACK);
-        if (node.left != null) {
-            int leftCenterX;
-            if (isRoot) {
-                leftCenterX = centerX - (elementWidth * (tree.height(node) + 1));
-            } else {
-                leftCenterX = centerX - (elementWidth * tree.height(node));
-            }
-            int leftCenterY = (int) (centerY + (1.5f * elementHeight));
-            g.drawLine(leftCenterX + elementWidth / 2, leftCenterY, centerX + elementWidth / 2, centerY + elementHeight);
-            drawTree(node.left, leftCenterX, leftCenterY, false);
-        }
-        if (node.right != null) {
-            int rightCenterX;
-            if (isRoot) {
-                rightCenterX = centerX + (elementWidth * (tree.height(node) + 1));
-            } else {
-                rightCenterX = centerX + (elementWidth * tree.height(node));
-            }
-            int rightCenterY = (int) (centerY + (1.5f * elementHeight));
-            g.drawLine(rightCenterX + elementWidth / 2, rightCenterY, centerX + elementWidth / 2, centerY + elementHeight);
-            drawTree(node.right, rightCenterX, rightCenterY, false);
-        }
-    }*/
-
-
     public void draw() {
         int width = panel.getWidth();
         int height = panel.getHeight();

@@ -32,8 +32,8 @@ public class ButtonActionListener implements ActionListener {
                 return;
             }
         }
-        tree.makeEmpty();
         textField.setBackground(Color.WHITE);
+        tree.makeEmpty();
         for (int element : elements) {
             tree.insert(element);
         }
